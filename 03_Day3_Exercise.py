@@ -40,7 +40,7 @@ print('el area de el circulo es: ', area)
 circunferencia = int(2 * pi * radio)
 print('La circunferencia es de: ', circunferencia)
 
-# EJERCICIO 8
+# Ejercicio 8
 # z = 2q - 2    q = x z = y
 q1, z1, q2,z2 = 1, 0, 0, -2
 FirstSlope = (z2 - z1) / (q2  - q1)
