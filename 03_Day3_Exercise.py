@@ -46,7 +46,7 @@ q1, z1, q2,z2 = 1, 0, 0, -2
 FirstSlope = (z2 - z1) / (q2  - q1)
 print("The slope is    ", FirstSlope)
 
-#EJERCICIO 9
+# EJERCICIO 9
 x1,y1,x2,y2 = 2,2,6,10
 Second_Slope = (y2 - y1) / (x2 - x1)
 print("The slope is" , Second_Slope)
