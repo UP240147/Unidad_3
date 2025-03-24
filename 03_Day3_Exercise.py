@@ -40,7 +40,7 @@ print('el area de el circulo es: ', area)
 circunferencia = int(2 * pi * radio)
 print('La circunferencia es de: ', circunferencia)
 
-#EJERCICIO 8
+# EJERCICIO 8
 # z = 2q - 2    q = x z = y
 q1, z1, q2,z2 = 1, 0, 0, -2
 FirstSlope = (z2 - z1) / (q2  - q1)
@@ -53,12 +53,12 @@ print("The slope is" , Second_Slope)
 euclidean_Distance = math.sqrt((x2 - x1) **2 + (y2-y1) ** 2)
 print("La distancia Eucladiana es  ", euclidean_Distance)
 
-#EJERCICIO 10
+# EJERCICIO 10
 if (FirstSlope == Second_Slope):
     print("It is the same")
 else: print("It is not the same, YOU ARE WRONG!")
 
-#EJERCICIO 11
+# EJERCICIO 11
 print("Evaluando la función y = x^2 + 6x + 9")
 for x in range(-10, 11):  # Prueba con valores de x entre -10 y 10
     y = x**2 + 6*x + 9
@@ -68,42 +68,42 @@ for x in range(-10, 11):  # Prueba con valores de x entre -10 y 10
 
 
 
-#EJERCICIO 12
+# EJERCICIO 12
 word1 = len("Python")
 word2 = len("dragon")
 if (word1 != word2):
     print("It is a diferent length")
 else: "It is the same length"
 
-#EJERCICIO 13
+# EJERCICIO 13
 print('on' in 'python' and 'on' in 'dragon')  # Output: True
 
 
-#EJERCICIO 14
+# EJERCICIO 14
 print("jargon" in "I hope this course is not full of jargon")
 
-#EJERCICIO 15
+# EJERCICIO 15
 print("no" in "dragon" and "no" in "Python")
 
-#EJERCICIO 16
+# EJERCICIO 16
 pythonLen = len("Python")
 print(float(pythonLen))
 print(int(pythonLen))
 
-#EJERCICIO 17
+# EJERCICIO 17
 number = float(input("Put a number"))
 reminder = number % 2
 if (reminder == 0):
     print("The number is divisible for 2") 
 else: print("The number is not divisible for 2")
 
-#EJERCICIO 18
+# EJERCICIO 18
 floorDivision = 7 / 3
 if floorDivision == int(2.7):
     print("It is not equal   ")
 else: print("It is equal   ")
 
-#EJERCICIO 19
+# EJERCICIO 19
 # Definir valores
 a = '10'  # Cadena
 b = 10    # Entero
@@ -112,18 +112,18 @@ result = type(a) == type(b)
 # Mostrar resultado
 print("¿El tipo de '10' es igual al tipo de 10?:", result)
 
-#EJERCICIO 20
+# EJERCICIO 20
 if "9.8" == 10:
     print(True)
 else: False
 
-#EJERCICIO 21
+# EJERCICIO 21
 hours = float(input("¿Cuántas horas trabajas?"))
 perHour = float(input("¿Cuánto te pagan por hora?"))
 weeklyEarning = hours * perHour
 print("Tu salario es de $  ", weeklyEarning)
 
-#EJERCICIO 22
+# EJERCICIO 22
 while True:
     try:
         yearsLived = int(input("¿Cuántos años tienes? (entre 0 y 100): "))
@@ -136,6 +136,6 @@ while True:
 secondsInYourLife = yearsLived * 3153600000 
 print("Has vivido por", secondsInYourLife, "segundos")
 
-#EJERCICIO 23
+# EJERCICIO 23
 for i in range(1, 6):
     print(i, 1, i, i**2, i**3)
