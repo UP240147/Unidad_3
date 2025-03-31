@@ -78,3 +78,168 @@ def print_list(lista):
     for listas in lista:
         print(listas)
 print_list(["Bazinga", "Epopeya", "Breaking Bad 2", True])
+
+# EJERCICIO 9
+def reverse_list(matriz):
+    for i in matriz:
+        matriz.reverse()
+        return matriz
+print(reverse_list([1, 2, 3, 4, 5]))
+
+# EJERCICIO 10
+def capitalize_list_items(lista):
+    return[item.capitalize() for item in lista]
+print(capitalize_list_items(["bazinga", "el pepe", "jose"]))
+
+# EJERCICIO 11
+def add_item(lista, objeto):
+    lista.append(objeto)
+    return lista
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(add_item(food_staff, 'Meat')) 
+
+# EJERCICIO 12
+def remove_item(lista, objeto):
+    lista.remove(objeto)
+    return lista
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(remove_item(food_staff, 'Mango'))  
+
+# EJERCICIO 13
+def sum_of_numbers(num1):
+    suma = 0
+    for i in range(0,num1 + 1):
+        suma += i
+    return suma
+print(sum_of_numbers(5))  # 15
+
+# EJERCICIO 14
+def sum_of_odds(odd): #Impares
+    suma = 0
+    for i in range(0,odd + 1, 2):
+       suma += i
+    return suma
+print(sum_of_odds(100))
+
+# EJERCICIO 15
+def sum_of_even(even):
+    suma = 0
+    for i in range(0,even, 2):
+        suma += i
+    return suma
+print(sum_of_even(100))
+
+
+# LEVEL 2
+#  EJERCICIO 1
+def evens_and__odds(numeros):
+    suma_pares = 0
+    suma_impares = 0
+    for i in range(numeros + 1):
+        if i %2 == 0:
+            suma_pares += 1
+        else: suma_impares += 1
+    return suma_pares, suma_impares
+print(evens_and__odds(100))
+
+# EJERCICIO 1
+def factorial(n):
+    if n == 0 or n == 1:  
+        return 1
+    result = 1
+    for i in range(2, n + 1):  
+        result *= i
+    return result
+print(factorial(5)) 
+
+# EJERCICIO 2
+def is_empty(value):
+    return not bool(value)
+print(is_empty(""))      
+
+# EJERCICIO 3
+from statistics import mean, median, mode, variance
+from math import sqrt
+
+def calculate_mean(numbers):
+    return mean(numbers)
+
+def calculate_median(numbers):
+    return median(numbers)
+
+def calculate_mode(numbers):
+    try:
+        return mode(numbers)
+    except:
+        return "No unique mode found"
+
+def calculate_range(numbers):
+    return max(numbers) - min(numbers)
+
+def calculate_variance(numbers):
+    return variance(numbers)
+
+def calculate_std(numbers):
+    return sqrt(calculate_variance(numbers))
+
+numbers = [1, 2, 2, 3, 4, 5, 5, 5, 6]
+print("media:", calculate_mean(numbers))
+print("Mediana:", calculate_median(numbers))
+print("Moda:", calculate_mode(numbers))
+print("Rango:", calculate_range(numbers))
+print("Variación:", calculate_variance(numbers))
+print("Desviaci[on Estandar", calculate_std(numbers))
+
+# LEVEL 3
+# EJERCICIO 1
+def numero_primo(numero):
+    if numero in [1, 3, 5, 7, 11, 13]:
+        print("Es primo")
+    else:
+        print("Es falso")
+numero_primo(2)  
+
+# EJERCICIO 2
+def unicos(lst):
+    return len(lst) == len(set(lst))
+unique_numbers = [1, 2, 3, 4, 5]
+print(unicos(unique_numbers))
+
+# EJERCICIO 3
+def same_data_type(lst):
+    return len(set(type(x) for x in lst)) == 1
+print(same_data_type([1, 2, 3, 4, 5]))  
+
+# EJERCICIO 4
+import keyword
+
+def is_valid_variable(name):
+    if not isinstance(name, str):
+        return False
+    if keyword.iskeyword(name):
+        return False
+    if not name.isidentifier():
+        return False
+    return True
+print(is_valid_variable("variable"))
+
+# EJERCICIO 5
+
+def lenguas_más_habladas(n=10):
+    language_counts = {'Inglés': 1500, 'Español': 500, 'Francés': 280, 'Chino': 1200, 'Arabe': 600}
+    return sorted(language_counts.items(), key=lambda x: x[1], reverse=True)[:n]
+
+
+def paises_mas_importantes(n=10):
+    country_population = {'China': 1400, 'India': 1380, 'EEUU': 330, 'Indonesia': 270, 'Brasil': 212}
+    return sorted(country_population.items(), key=lambda x: x[1], reverse=True)[:n]
+
+
+print("Top 10 idiomas más hablados:")
+for idioma, hablantes in lenguas_más_habladas(10):
+    print(f"{idioma}: {hablantes} millones de hablantes")
+
+
+print("\nTop 10 países más importantes:")
+for pais, poblacion in paises_mas_importantes(10):
+    print(f"{pais}: {poblacion} millones de personas")
