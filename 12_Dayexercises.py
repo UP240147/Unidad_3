@@ -105,5 +105,4 @@ import random
 def unique_random_numbers():
     return random.sample(range(10), 7)  # Toma 7 números únicos del 0 al 9
 
-# Prueba
 print(unique_random_numbers())  # Ejemplo de salida: [3, 7, 1, 9, 5, 0, 6]
